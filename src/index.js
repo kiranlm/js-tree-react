@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Tree from "./tree";
 import Node from "./Node";
-import "./tree.css";
+import * as styles from "./tree.css";
 
 const LMTree = ({
   tree,
@@ -16,10 +16,10 @@ const LMTree = ({
     const treeItem = new Tree(tree);
     treeItem.renderNode = renderNode;
     treeItem.collapseIconOpen = collapseIconOpen || (
-      <span className="collapse caret-right" />
+      <span className={styles.caretRight} />
     );
     treeItem.collapseIconClosed = collapseIconClosed || (
-      <span className="collapse caret-down" />
+      <span className={styles.caretDown} />
     );
     return treeItem;
   }, [collapseIconOpen, collapseIconClosed, renderNode, tree]);
@@ -39,7 +39,7 @@ const LMTree = ({
     setTreeState(treeItem);
   };
   return treeState ? (
-    <div className="lmTree">
+    <div className={styles.lmTree}>
       <Node
         tree={treeState}
         index={treeState.getIndex(1)}

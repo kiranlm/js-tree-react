@@ -8,15 +8,7 @@
   user-select: none;
 }
 
-.lmNode.placeholder > * {
-  visibility: hidden;
-}
-
-.lmNode.placeholder {
-  border: 1px dashed #ccc;
-}
-
-.lmNode .inner {
+.inner {
   position: relative;
   cursor: pointer;
   padding-left: 10px;
@@ -26,15 +18,16 @@
   width: max-content;
 }
 
-.lmNode .collapse {
+.caretRight,
+.caretDown {
   position: relative;
   cursor: pointer;
 }
 
-.lmNode .caret-right:before {
+.caretRight:before {
   content: "\25B8";
 }
 
-.lmNode .caret-down:before {
+.caretDown:before {
   content: "\25BE";
 }

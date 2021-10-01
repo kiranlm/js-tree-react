@@ -1,4 +1,5 @@
 import React from "react";
+import * as styles from "./tree.css";
 
 const LMTreeNode = (props) => {
   const { index, tree } = props;
@@ -25,7 +26,7 @@ const LMTreeNode = (props) => {
       };
 
       return (
-        <div className="children" style={childrenStyles}>
+        <div style={childrenStyles}>
           {index.children.map((child) => {
             const childIndex = tree.getIndex(child);
 
@@ -56,11 +57,10 @@ const LMTreeNode = (props) => {
   };
 
   const { node } = index;
-  const styles = {};
 
   return (
-    <div className="lmNode" style={styles}>
-      <div className="inner">
+    <div className={styles.lmNode}>
+      <div className={styles.inner}>
         {renderCollapse()}
         {tree.renderNode(node)}
       </div>

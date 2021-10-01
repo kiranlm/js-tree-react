@@ -20,7 +20,7 @@ A simple customizable tree component for react
 npm i custom-react-tree
 ```
 
-[![rc-tree](https://nodei.co/npm/custom-react-tree.png)](https://npmjs.org/package/custom-react-tree)
+[![custom-react-tree](https://nodei.co/npm/custom-react-tree.png)](https://npmjs.org/package/custom-react-tree)
 
 ## Usage
 
