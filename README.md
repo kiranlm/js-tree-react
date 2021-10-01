@@ -26,6 +26,65 @@ npm i custom-react-tree
 
 #### Basic example
 
+> treeData.json
+
+```json
+{
+  "name": "Top Parent",
+  "children": [
+    {
+      "name": "Parent 1",
+      "collapsed": true,
+      "children": [
+        {
+          "name": "Child 1 level 1",
+          "leaf": true,
+          "children": [
+            {
+              "name": "Child 1 level 2",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "Child 2 level 1",
+          "leaf": true
+        },
+        {
+          "name": "Child 3 level 1",
+          "leaf": true
+        },
+        {
+          "name": "Child 4 level 1",
+          "leaf": true
+        }
+      ]
+    },
+    {
+      "name": "Parent 2",
+      "leaf": true
+    },
+    {
+      "name": "Parent 3",
+      "children": [
+        {
+          "name": "Child 1 level 1",
+          "leaf": true,
+          "children": [
+            {
+              "name": "Child 1 level 2",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+> App.jsx
+
 ```javascript
 import React from "react";
 import Tree from "custom-react-tree";
