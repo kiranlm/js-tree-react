@@ -26,7 +26,7 @@ npm i custom-react-tree
 
 #### Basic example
 
-> treeData.json
+> data.json
 
 ```json
 {
