@@ -24,7 +24,27 @@ npm i custom-react-tree
 
 ## Usage
 
-see examples
+#### Basic example
+
+```javascript
+import React from "react";
+import Tree from "custom-react-tree";
+import treeData from "./data.json";
+
+const App = () => {
+  const renderNode = (node) => {
+    return <div>{node.name}</div>;
+  };
+
+  return (
+    <div className="app">
+      <Tree paddingLeft={15} tree={treeData} renderNode={renderNode} />
+    </div>
+  );
+};
+
+export default App;
+```
 
 ## API
 
