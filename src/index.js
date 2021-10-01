@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Tree from "./tree";
 import Node from "./Node";
+import "./tree.css";
 
 const LMTree = ({
   tree,
