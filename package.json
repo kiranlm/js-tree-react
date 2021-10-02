@@ -1,12 +1,12 @@
 {
-  "name": "custom-react-tree",
+  "name": "js-tree-react",
   "version": "1.0.0",
   "description": "A simple customizable react tree component",
   "main": "./build/index.js",
   "author": "Kiran LM",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiranlm/custom-react-tree"
+    "url": "https://github.com/kiranlm/js-tree-react"
   },
   "keywords": [
     "react",

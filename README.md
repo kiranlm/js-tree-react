@@ -1,10 +1,10 @@
 # Custom React Tree
 
-![CircleCI](https://img.shields.io/circleci/build/github/kiranlm/custom-react-tree) [![MIT License](https://img.shields.io/github/license/kiranlm/custom-react-tree)](https://github.com/kiranlm/custom-react-tree/blob/main/LICENSE) [![Dev Deps](https://img.shields.io/david/dev/kiranlm/custom-react-tree)](https://github.com/kiranlm/custom-react-tree/blob/main/package.json) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/kiranlm/custom-react-tree)
+![CircleCI](https://img.shields.io/circleci/build/github/kiranlm/js-tree-react) [![MIT License](https://img.shields.io/github/license/kiranlm/js-tree-react)](https://github.com/kiranlm/js-tree-react/blob/main/LICENSE) [![Dev Deps](https://img.shields.io/david/dev/kiranlm/js-tree-react)](https://github.com/kiranlm/js-tree-react/blob/main/package.json) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/kiranlm/js-tree-react)
 
 ### Description
 
-A simple customizable tree component for react
+A simple customizable tree component for react made on top of js-tree [js-tree](https://www.jstree.com/)
 
 ## Features
 
@@ -17,10 +17,10 @@ A simple customizable tree component for react
 ## Install
 
 ```bash
-npm i custom-react-tree
+npm i js-tree-react
 ```
 
-[![custom-react-tree](https://nodei.co/npm/custom-react-tree.png)](https://npmjs.org/package/custom-react-tree)
+[![js-tree-react](https://nodei.co/npm/js-tree-react.png)](https://npmjs.org/package/js-tree-react)
 
 ## Usage
 
@@ -87,7 +87,7 @@ npm i custom-react-tree
 
 ```javascript
 import React from "react";
-import Tree from "custom-react-tree";
+import Tree from "js-tree-react";
 import treeData from "./data.json";
 
 const App = () => {
@@ -119,6 +119,6 @@ export default App;
 
 ## License
 
-custom-react-tree is released under the MIT license.
+js-tree-react is released under the MIT license.
 
 > Made with :heart: by **`kiranlm`**
