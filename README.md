@@ -1,6 +1,6 @@
 # Custom React Tree
 
-![CircleCI](https://img.shields.io/circleci/build/github/kiranlm/js-tree-react) [![MIT License](https://img.shields.io/github/license/kiranlm/js-tree-react)](https://github.com/kiranlm/js-tree-react/blob/main/LICENSE) [![David](https://img.shields.io/david/peer/kiranlm/js-tree-react)](https://github.com/kiranlm/js-tree-react/blob/main/package.json) ![npm](https://img.shields.io/npm/v/js-tree-react)
+![CircleCI](https://img.shields.io/circleci/build/github/kiranlm/js-tree-react/main) [![GitHub](https://img.shields.io/github/license/kiranlm/js-tree-react)](https://github.com/kiranlm/js-tree-react/blob/main/LICENSE) [![David](https://img.shields.io/david/peer/kiranlm/js-tree-react)](https://github.com/kiranlm/js-tree-react/blob/main/package.json) ![npm](https://img.shields.io/npm/v/js-tree-react)
 
 ### Description
 
