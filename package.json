@@ -46,6 +46,7 @@
     "path": "^0.12.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "styled-components": "^5.3.1",
     "webpack": "^4.5.0",
     "webpack-cli": "^3.2.1"
   }

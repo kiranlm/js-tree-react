@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Tree from "./tree";
 import Node from "./Node";
-import * as styles from "./tree.css";
+import styled from "styled-components";
 
-const LMTree = ({
+const JSTree = ({
   tree,
   renderNode,
   collapseIconOpen,
@@ -12,15 +12,45 @@ const LMTree = ({
 }) => {
   const [treeState, setTreeState] = useState(null);
 
+  const CaretRight = styled.div`
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: "+";
+      position: relative;
+      left: 5px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  `;
+
+  const CaretDown = styled.div`
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: "-";
+      position: relative;
+      left: 5px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  `;
+
+  const TreeDiv = styled.div`
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  `;
+
   const getTree = useCallback(() => {
     const treeItem = new Tree(tree);
     treeItem.renderNode = renderNode;
-    treeItem.collapseIconOpen = collapseIconOpen || (
-      <span className={styles.caretRight} />
-    );
-    treeItem.collapseIconClosed = collapseIconClosed || (
-      <span className={styles.caretDown} />
-    );
+    treeItem.collapseIconOpen = collapseIconOpen || <CaretRight />;
+    treeItem.collapseIconClosed = collapseIconClosed || <CaretDown />;
     return treeItem;
   }, [collapseIconOpen, collapseIconClosed, renderNode, tree]);
 
@@ -39,7 +69,7 @@ const LMTree = ({
     setTreeState(treeItem);
   };
   return treeState ? (
-    <div className={styles.lmTree}>
+    <TreeDiv>
       <Node
         tree={treeState}
         index={treeState.getIndex(1)}
@@ -47,7 +77,7 @@ const LMTree = ({
         paddingLeft={paddingLeft}
         onCollapse={toggleCollapse}
       />
-    </div>
+    </TreeDiv>
   ) : null;
 };
-export default LMTree;
+export default JSTree;

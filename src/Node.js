@@ -1,8 +1,28 @@
 import React from "react";
-import * as styles from "./tree.css";
+import styled from "styled-components";
 
 const LMTreeNode = (props) => {
   const { index, tree } = props;
+
+  const TreeNode = styled.div`
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  `;
+
+  const TreeInner = styled.div`
+    position: relative;
+    cursor: pointer;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: max-content;
+  `;
 
   const renderCollapse = () => {
     if (index.children && index.children.length) {
@@ -59,13 +79,13 @@ const LMTreeNode = (props) => {
   const { node } = index;
 
   return (
-    <div className={styles.lmNode}>
-      <div className={styles.inner}>
+    <TreeNode>
+      <TreeInner>
         {renderCollapse()}
         {tree.renderNode(node)}
-      </div>
+      </TreeInner>
       {node.collapsed ? null : renderChildren()}
-    </div>
+    </TreeNode>
   );
 };
 
