@@ -4,7 +4,7 @@
 
 ### Description
 
-A simple customizable tree component for react made on top of js-tree [js-tree](https://www.jstree.com/)
+A simple customizable tree component for react made on top of [js-tree](https://www.npmjs.com/package/js-tree)
 
 ## Features
 
