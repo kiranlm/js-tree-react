@@ -8,7 +8,6 @@ A simple customizable tree component for react made on top of [js-tree](https://
 
 ## Features
 
-- Support all popular browsers, including Internet Explorer 9 and above.
 - Can use custom component for nodes
 - Can use custom icons for collapse/expand
 
