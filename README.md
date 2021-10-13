@@ -105,17 +105,19 @@ const App = () => {
 export default App;
 ```
 
+> A simple customized example can be found here : [code sandbox example](https://codesandbox.io/s/js-tree-react-sample-example-1ng34)
+
 ## API
 
 ### Tree props
 
-| Name              | Description                         | Type     |
-| ----------------- | ----------------------------------- | -------- |
-| paddingLeft       | Left padding before the node        | Number   |
-| tree              | Object containing nodes             | Object   |
-| renderNode        | Function for rendering custom nodes | Function |
-| collapseIconOpen  | Icon for collapse node expand       | Element  |
-| collapseIconClose | Icon for collapse node collapse     | Element  |
+| Name               | Description                         | Type     |
+| ------------------ | ----------------------------------- | -------- |
+| paddingLeft        | Left padding before the node        | Number   |
+| tree               | Object containing nodes             | Object   |
+| renderNode         | Function for rendering custom nodes | Function |
+| collapseIconOpen   | Icon for collapse node expand       | Element  |
+| collapseIconClosed | Icon for collapse node collapse     | Element  |
 
 ## License
 
